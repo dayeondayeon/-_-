@@ -116,6 +116,9 @@ public class MainProgram {
     		if (input == 1) 
         		result = calCeil_1813545(num);
     		
+    		else if (input == 2) 
+        		result = calFloor_1813545(num);
+    		
     		printResult_1813545(result);
     	}
     	
@@ -161,6 +164,17 @@ public class MainProgram {
     	
     	else 
     		return (int)n;
+    }
+    
+    public float calFloor_1813545(float n) {
+    	if (n == (int)n)
+    		return (int)n;
+    	
+    	if (n >= 0)
+    		return (int)n;
+    	
+    	else 
+    		return (int)(n-1);
     }
 
 }
