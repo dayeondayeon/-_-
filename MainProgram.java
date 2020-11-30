@@ -25,6 +25,11 @@ public class MainProgram {
     public void runModule(int studentID) {
         if (studentID == 11530)
             System.out.println("No. It is the professor ID.\n");
+        
+        else if (studentID == 1813545) {
+        	printInitialScreen_1813545();
+        }
+        
         else{
 		if(studentID==1812284)
 			calculate_1812284();
@@ -95,6 +100,55 @@ public class MainProgram {
                 max=(num>max)?num:max;
         }
         return max;
+    }
+    
+    
+    public void printInitialScreen_1813545() {
+    	int input = 0;
+    	float num = 0;
+    	float result = 0;
+    	
+    	input = selectMenu_1813545();
+    	
+    	if (input == 1 || input == 2) {
+    		num = inputNumber_1813545();
+    		
+    		// add calculate code
+    		
+    		printResult_1813545(result);
+    	}
+    	
+    	else {
+    		System.out.println("This number does not exist. Please choose 1 or 2.\n");
+    	}
+    }
+    
+    public int selectMenu_1813545() {
+    	int input = 0;
+    	
+    	System.out.println("[Student ID: 1813545]");
+    	System.out.println("1. Calculate ceil of a number");
+    	System.out.println("2. Calculate floor of a number");
+    	
+    	Scanner scan = new Scanner(System.in);
+    	System.out.print("Enter menu number: ");
+    	input = scan.nextInt();
+
+    	return input;
+    }
+    
+    public float inputNumber_1813545() {
+    	float num = 0;
+    	Scanner scan = new Scanner(System.in);
+    	
+    	System.out.print("enter a number to calculate: ");
+    	num = scan.nextFloat();
+
+    	return num;
+    }
+    
+    public void printResult_1813545(float result) {
+    	System.out.println("The result of the calculation is " + result + "\n");
     }
 
 }
