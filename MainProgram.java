@@ -113,7 +113,8 @@ public class MainProgram {
     	if (input == 1 || input == 2) {
     		num = inputNumber_1813545();
     		
-    		// add calculate code
+    		if (input == 1) 
+        		result = calCeil_1813545(num);
     		
     		printResult_1813545(result);
     	}
@@ -149,6 +150,17 @@ public class MainProgram {
     
     public void printResult_1813545(float result) {
     	System.out.println("The result of the calculation is " + result + "\n");
+    }
+    
+    public float calCeil_1813545(float n) {
+    	if (n == (int)n) 
+    		return (int)n;
+    	
+    	if (n >= 0) 
+    		return (int)(n+1);
+    	
+    	else 
+    		return (int)n;
     }
 
 }
