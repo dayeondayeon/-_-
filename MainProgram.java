@@ -30,10 +30,8 @@ public class MainProgram {
         	printInitialScreen_1813545();
         }
         
-        else{
-		if(studentID==1812284)
-			calculate_1812284();
-            System.out.println("To be developed...\n");
+        else if(studentID==1812284){
+		calculate_1812284();
 	}
     }
 
