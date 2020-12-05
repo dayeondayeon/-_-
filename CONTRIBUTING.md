@@ -1,4 +1,4 @@
-"hi"
-"this is for master branch"
 "this is for testing"
+"hello"
+"this is for conflict testing"
 "bye"
