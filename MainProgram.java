@@ -178,7 +178,7 @@ public class MainProgram {
     		return (int)(n-1);
     }
     
-    private void InitialScreen_1812967() {    	
+    public void InitialScreen_1812967() {    	
     	System.out.println("[Student ID: 1812967]");
     	System.out.println("1. Calculate maximum of numbers");
     	System.out.println("2. Calculate absolute value of a number");
