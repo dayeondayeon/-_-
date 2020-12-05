@@ -32,7 +32,10 @@ public class MainProgram {
         
         else if(studentID==1812284){
 		calculate_1812284();
-	}
+        }
+        else if(studentID==1812967) {
+        	InitialScreen_1812967();
+        }
     }
 
     private void calculate_1812284() {
@@ -173,6 +176,50 @@ public class MainProgram {
     	
     	else 
     		return (int)(n-1);
+    }
+    
+    private void InitialScreen_1812967() {    	
+    	System.out.println("[Student ID: 1812967]");
+    	System.out.println("1. Calculate maximum of numbers");
+    	System.out.println("2. Calculate absolute value of a number");
+    	
+    	Scanner sc = new Scanner(System.in);
+    	System.out.print("Enter menu number: ");
+    	while(true) {
+    		int Menu = sc.nextInt();
+    		if(Menu == 1) {
+    			int num1, num2;
+    			System.out.print("Enter two integers: ");
+    			num1 = sc.nextInt();
+    			num2 = sc.nextInt();
+    			System.out.println("The maximum is "+Max(num1, num2)+".");
+    			break;    			
+    		}else if(Menu==2) {
+    			int num;
+    			System.out.print("Enter one integer: ");
+    			num = sc.nextInt();
+    			System.out.println("The absolute value is "+Abs(num)+".");
+    			break;
+    		}else {
+    			System.out.println("Select the appropriate menu.");
+    			System.out.print("Enter menu number: ");
+    		}
+    	}
+    }
+    public int Max(int a, int b) {
+    	if(a>=b) {
+    		return a;
+    	}else {
+    		return b;
+    	}
+    }
+    public int Abs(int a) {
+    	if(a>=0) {
+    		return a;
+    	}
+    	else {
+    		return (-1)*a;
+    	}
     }
 
 }
