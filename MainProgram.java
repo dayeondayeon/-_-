@@ -36,6 +36,9 @@ public class MainProgram {
         else if(studentID==1812967) {
         	InitialScreen_1812967();
         }
+	else if(studentID == 1813592) {
+        	print_1813592_screen();
+        }
     }
 
     private void calculate_1812284() {
@@ -221,5 +224,16 @@ public class MainProgram {
     		return (-1)*a;
     	}
     }
+	
+     public void print_1813592_screen() {
+    	Scanner scanner = new Scanner(System.in);
+    	int choice;
 
+    	System.out.println("[Student ID: 1813592]");
+    	System.out.println("1. Calculate Factorial");
+    	System.out.println("2. Calculate Absolute value");
+    	System.out.print("Enter menu number: ");
+    	choice = scanner.nextInt();
+    	calculate_1813592(choice);
+    }
 }
