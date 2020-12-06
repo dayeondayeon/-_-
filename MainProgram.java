@@ -256,4 +256,24 @@ public class MainProgram {
     	}
     }
 
+    public long factorial_1813592(int number) {
+    	if(number > 1) {
+    		return number * factorial_1813592(number-1);
+    	}
+    	else {
+    		return 1;
+    	}
+    }
+
+    public int absolutevalue_1813592(int number) {
+    	if(number == 0) {
+    		return 0;
+    	}
+    	else if(number > 0) {
+    		return number;
+    	}
+    	else {
+    		return -number;
+    	}
+    }
 }
