@@ -236,4 +236,24 @@ public class MainProgram {
     	choice = scanner.nextInt();
     	calculate_1813592(choice);
     }
+
+     public void calculate_1813592(int choice) {
+    	Scanner scanner = new Scanner(System.in);
+    	int number;
+    	
+    	if(choice == 1) {
+    		System.out.print("Enter the number for Factorial Calculation: ");
+    		number = scanner.nextInt();
+    		System.out.println("Factorial result : " + factorial_1813592(number) + '\n');
+    	}
+    	else if(choice == 2) {
+    		System.out.print("Enter the number for Absolute Value Calculation: ");
+    		number = scanner.nextInt();
+    		System.out.println("Absolute Value result : " + absolutevalue_1813592(number) + '\n');
+    	}
+    	else {
+    		System.out.println("Please choose correct menu.");
+    	}
+    }
+
 }
