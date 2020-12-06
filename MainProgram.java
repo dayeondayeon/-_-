@@ -237,7 +237,7 @@ public class MainProgram {
     	calculate_1813592(choice);
     }
 
-     public void calculate_1813592(int choice) {
+    public void calculate_1813592(int choice) {
     	Scanner scanner = new Scanner(System.in);
     	int number;
     	
